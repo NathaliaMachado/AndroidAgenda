@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.opensource.nathalia.myapplication.MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="263dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="267dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Phone"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="263dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Email"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="359dp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="438dp"
+        android:onClick="Onclick"/>
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="438dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:text="New Contact"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="16dp"
+        tools:text="New Contact" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="178dp"
+        android:layout_height="174dp"
+        app:srcCompat="@drawable/avatar"
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+
+</android.support.constraint.ConstraintLayout>
